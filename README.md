@@ -1,28 +1,74 @@
-# Create T3 App
+# My DevJourney - Blog
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Criei este projeto para experienciar alguns techs que estou estudando, como NextJS, Prisma, TailwindCSS, tRPC e NextAuth.
 
-## What's next? How do I make an app with this?
+Além disso, será um projeto CRUD com usuário e post onde cada usuário poderá criar, editar, ver e excluir seus posts.
+Todos os visitantes do blog poderão visualizar os posts de todos os usuários/autores.
+O login será feito com Discord, e futuramente irei adicionar outras formas de login.
+O usuário deverá ser capaz de criar posts com imagens e textos.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## 🚀 Começando
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+Para executar o projeto, será necessário instalar os seguintes programas:
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+- [PostgreSQL](https://www.postgresql.org/download/)
+- [Docker](https://www.docker.com/products/docker-desktop)
 
-## Learn More
+## 📚 Documentação
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- [NextJS](https://nextjs.org/docs)
+- [Prisma](https://www.prisma.io/docs/)
+- [TailwindCSS](https://tailwindcss.com/docs)
+- [tRPC](https://trpc.io/docs/introduction)
+- [NextAuth](https://next-auth.js.org/getting-started/introduction)
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## 📦 Desenvolvimento
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
 
-## How do I deploy this?
+```shell
+cd "diretorio de sua preferencia"
+git clone
+```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## 📦 Configuração
+
+Para configurar o projeto, é necessário instalar as dependências do projeto:
+
+```shell
+yarn install
+```
+
+## 📦 Banco de Dados
+
+Para configurar o banco de dados, é necessário criar um arquivo .env na raiz do projeto com as seguintes variáveis:
+
+```shell
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/devjourney?schema=public"
+```
+
+## 📦 Execução
+
+Para executar o projeto, é necessário executar o seguinte comando:
+
+```shell
+yarn dev
+```
+
+## 📦 Docker
+
+Para executar o projeto com o docker, é necessário executar os seguintes comandos:
+
+```shell
+docker-compose up -d
+```
+
+## 📦 Migrations
+
+Para executar as migrations, é necessário executar os seguintes comandos:
+
+```shell
+yarn prisma migrate dev
+```
