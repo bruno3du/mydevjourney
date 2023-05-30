@@ -5,7 +5,7 @@ export default function HomeContainer() {
     <div className="pt-14">
       <h1 className="text-center">Latest Post</h1>
 
-      <section className="px-lg-4 max-w-screen-xl mx-auto flex flex-col flex-wrap gap-8 pb-28 pt-4 px-20">
+      <section className="mx-auto flex max-w-screen-xl flex-wrap justify-center  gap-8 px-3 pb-28 pt-4 md:px-10 lg:justify-center lg:px-20">
         <CardListLatestPosts />
         <CardListLatestPosts />
         <CardListLatestPosts />

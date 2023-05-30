@@ -1,21 +1,26 @@
 interface LogoProps {
-  size?:
-    | "xs"
-    | "sm"
-    | "md"
-    | "lg"
-    | "xl"
-    | "2xl"
-    | "3xl"
-    | "4xl"
-    | "5xl"
-    | "6xl";
+  textSize?:
+    | "text-xs"
+    | "text-sm"
+    | "text-md"
+    | "text-lg"
+    | "text-xl"
+    | "text-2xl"
+    | "text-3xl"
+    | "text-4xl"
+    | "text-5xl"
+    | "text-6xl";
+  className?: string;
 }
 
-export default function Logo({ size = "4xl" }: LogoProps) {
+export default function Logo({ textSize = "text-4xl", className }: LogoProps) {
   return (
-    <div className={`font-heading text-${size} font-bold text-white`}>
-      My <span className="text-orange">DevJourney</span>
-    </div>
+    <p
+      className={`font-heading ${textSize} font-bold leading-none text-white ${
+        className ?? ""
+      }`}
+    >
+      My <span className="text-orange ">DevJourney</span>
+    </p>
   );
 }

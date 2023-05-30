@@ -1,18 +1,17 @@
-import Image from "next/image";
 import Button from "../Button";
 import { FiArrowRightCircle } from "react-icons/fi";
 
 export default function CardListLatestPosts() {
   return (
-    <div className="flex h-64 w-full rounded-lg bg-gray-800">
-      <div className="h-full w-96 flex-shrink-0 rounded-lg bg-black">
+    <div className="min-h-64 flex max-w-6xl flex-col rounded-lg bg-gray-700  md:h-auto md:w-full lg:flex-row">
+      <div className="h-64 w-full flex-shrink-0 rounded-lg bg-black sm:aspect-video sm:h-auto lg:aspect-auto lg:h-full lg:w-[360px]">
         {/* <Image
           className="h-10 w-10 rounded-full"
           src="{person.imageUrl}"
           alt="person"
         /> */}
       </div>
-      <div className="flex flex-col justify-between px-10 py-10 pb-6">
+      <div className="flex max-w-full flex-col justify-between px-4 py-10 pb-6 md:aspect-auto lg:w-full lg:px-10">
         <div>
           <h3 className="mb-2 text-3xl">My title</h3>
           <p>
@@ -21,7 +20,7 @@ export default function CardListLatestPosts() {
             nec fringilla accumsan, risus sem sollicitudin lacus,n
           </p>
         </div>
-        <div className="flex justify-end">
+        <div className="mt-10 flex justify-end">
           <Button iconRight={<FiArrowRightCircle />}>Leia mais</Button>
         </div>
       </div>
