@@ -1,4 +1,4 @@
-import CardListLatestPosts from "~/components/CardListLatestPosts";
+import CardListLatestPosts from "./components/CardListLatestPosts";
 
 export default function HomeContainer() {
   return (

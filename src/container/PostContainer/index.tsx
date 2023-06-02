@@ -16,10 +16,10 @@ const routes = [
 
 export default function PostContainer() {
   return (
-    <div className="container mx-auto px-24 py-32">
+    <div className="mx-auto w-[1440px] max-w-full px-24 py-32 ">
       <h1 className="mb-10 px-5 text-6xl">Posts</h1>
       <Breadcrumb pageList={routes} />
-      <div className="flex gap-12 pt-5">
+      <div className="flex gap-12 pt-5 max-[1120px]:flex-col">
         <Article />
         <PostUserProfile
           github="https://github.com/bruno3du"
@@ -27,7 +27,6 @@ export default function PostContainer() {
           name="Bruno Eduardo"
         />
       </div>
-    
     </div>
   );
 }

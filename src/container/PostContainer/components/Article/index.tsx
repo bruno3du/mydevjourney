@@ -2,7 +2,7 @@ import Container from "~/components/Container";
 
 export default function Article() {
   return (
-    <Container className="w-[854px] px-10 py-20">
+    <Container className="max-[1120px]:w-[854px] px-10 py-20">
       <article>
         <p>
           Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu

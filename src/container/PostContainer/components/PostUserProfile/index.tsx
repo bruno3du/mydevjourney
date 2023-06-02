@@ -13,10 +13,10 @@ export default function PostUserProfile({
   image,
 }: PostUserProfileProps) {
   return (
-    <Container className="w-[346px] px-10 py-20">
+    <Container className="px-5 py-20 lg:w-[290px] xl:w-[346px] xl:px-10">
       <section>
         <div>
-          <div className="h-[240px] w-[270px] bg-gray-500">
+          <div className="h-[230px]  rounded  bg-gray-500 xl:h-[240px]">
             {/* <Image /> */}
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function PostUserProfile({
             {github}
           </a>
         </div>
-        <div className="mt-7">
+        <div className="mt-4">
           <p className="text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           </p>
