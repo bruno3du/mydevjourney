@@ -9,7 +9,7 @@ export default function Container({
 }: ContainerProps) {
   return (
     <div
-      className={`min-h-[106px] rounded-md bg-gray-700 ${className ?? ""}`}
+      className={`min-h-[106px] rounded-md ${className ?? ""}`}
       {...props}
     >
       {children}

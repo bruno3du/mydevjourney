@@ -9,7 +9,7 @@ interface BreadcrumbProps {
 export default function Breadcrumb({ pageList }: BreadcrumbProps) {
   return (
     <nav
-      className="justify-between rounded-lg border border-gray-750 bg-gray-700 px-4 py-2  dark:border-gray-700 dark:bg-gray-800 sm:flex sm:px-5"
+      className="justify-between rounded-lg border border-gray-750  px-4 py-2 sm:flex sm:px-5"
       aria-label="Breadcrumb"
     >
       <ol className="mb-3 inline-flex items-center space-x-1 sm:mb-0 md:space-x-3">
@@ -23,7 +23,7 @@ export default function Breadcrumb({ pageList }: BreadcrumbProps) {
                 <div className="flex items-center">
                   <Link
                     href={page.href}
-                    className="ml-1 text-sm font-medium  hover:text-orange dark:text-gray-400 dark:hover:text-white md:ml-2"
+                    className="ml-1 text-sm font-medium md:ml-2"
                   >
                     {page.name}
                   </Link>
@@ -44,9 +44,9 @@ export default function Breadcrumb({ pageList }: BreadcrumbProps) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                   <span className="mx-1 text-sm font-medium text-gray-500 dark:text-gray-400 md:mx-2">
@@ -68,14 +68,14 @@ export default function Breadcrumb({ pageList }: BreadcrumbProps) {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <a
                   href={page.href}
-                  className="ml-1 text-sm font-medium  hover:text-orange dark:text-gray-400 dark:hover:text-white md:ml-2"
+                  className="ml-1 text-sm font-medium md:ml-2"
                 >
                   {page.name}
                 </a>

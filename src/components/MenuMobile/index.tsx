@@ -35,7 +35,7 @@ export default function MenuMobile({ isOpen, onClose }: MenuMobileProps) {
                     <Link
                       href={route.href}
                       onClick={onClose}
-                      className="flex h-32 w-full items-center justify-center bg-gray-700 font-heading text-3xl font-bold"
+                      className="flex h-32 w-full items-center justify-center font-heading text-3xl font-bold"
                     >
                       {route.name}
                     </Link>

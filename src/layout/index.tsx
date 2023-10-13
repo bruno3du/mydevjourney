@@ -1,11 +1,25 @@
-import Footer from "~/components/Footer";
-import Header from "~/components/Header";
+import Head from "next/head";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { ThemeProvider } from '@/components/ThemeProvider';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+interface ILayout {
+  children: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+export default function Layout({ children, title, description }: ILayout) {
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Head>
       <Header />
-      <main className=" bg-gray-800">{children}</main>
+      <ThemeProvider>
+        <main>{children}</main>
+      </ThemeProvider>
       <Footer />
     </>
   );

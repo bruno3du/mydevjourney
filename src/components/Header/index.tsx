@@ -1,4 +1,4 @@
-import ButtonHamburger from "~/assets/Icons/ButtonHamburger";
+import ButtonHamburger from "@/assets/Icons/ButtonHamburger";
 import Logo from "../Logo";
 import { useState } from "react";
 import MenuMobile from "../MenuMobile";
@@ -27,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <header className="h-28 bg-gray-700">
+    <header className="h-28">
       <div className="container mx-auto flex h-full items-center justify-between gap-12 rounded-md px-5 md:gap-0">
         <button className="md:hidden" type="button" onClick={onOpen}>
           <ButtonHamburger />

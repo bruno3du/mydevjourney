@@ -1,12 +1,12 @@
-import Button from "~/components/Button";
+import { Button } from "@/components/ui/button";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { useRouter } from "next/router";
 
 export default function CardListLatestPosts() {
   const router = useRouter();
   return (
-    <div className="min-h-64 flex max-w-6xl flex-col rounded-lg bg-gray-700  md:h-auto md:w-full lg:flex-row">
-      <div className="h-64 w-full flex-shrink-0 rounded-lg bg-black sm:aspect-video sm:h-auto lg:aspect-auto lg:h-full lg:w-[360px]">
+    <div className="min-h-64 flex max-w-6xl flex-col rounded-lg bg-neutral-950 md:h-auto md:w-full lg:flex-row">
+      <div className="h-64 w-full flex-shrink-0 rounded-lg bg-zinc-950 sm:aspect-video sm:h-auto lg:aspect-auto lg:h-full lg:w-[360px]">
         {/* <Image
           className="h-10 w-10 rounded-full"
           src="{person.imageUrl}"
@@ -23,10 +23,7 @@ export default function CardListLatestPosts() {
           </p>
         </div>
         <div className="mt-10 flex justify-end">
-          <Button
-            iconRight={<FiArrowRightCircle />}
-            onClick={() => void router.push("/post/abc")}
-          >
+          <Button onClick={() => void router.push("/post/abc")}>
             Leia mais
           </Button>
         </div>
