@@ -1,17 +1,16 @@
-import { type AppType } from "next/app";
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
-import { Karma } from "next/font/google";
+import { type AppType } from "next/app";
+import { Inter } from "next/font/google";
 
 import { api } from "@/utils/api";
 
 import "../styles/globals.css";
 
-const karma = Karma({
+const karma = Inter({
   weight: ["400", "500", "600", "700"],
-  style: ["normal"],
-  subsets: ["latin-ext"],
-  variable: "--karma-font",
+  subsets: ["latin"],
+  variable: "--inter-font",
 });
 
 const MyApp: AppType<{ session: Session | null }> = ({

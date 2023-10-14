@@ -1,10 +1,11 @@
 import Container from "@/components/ui/container";
+import { Typography } from "@/components/ui/typography";
 
 export default function Article() {
   return (
     <Container className="max-w-full px-5 py-10 md:px-10 md:py-20">
       <article>
-        <p>
+        <Typography.p>
           Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
           turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
           fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
@@ -15,8 +16,8 @@ export default function Article() {
           Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
           lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
           elementum tellus.
-        </p>
-        <p className="pt-10">
+        </Typography.p>
+        <Typography.p>
           Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque
           quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo
           vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu
@@ -26,8 +27,8 @@ export default function Article() {
           lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum
           sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis
           nisi, ac posuere leo.
-        </p>
-        <p className="pt-10">
+        </Typography.p>
+        <Typography.p>
           Nam pulvinar blandit velit, id condimentum diam faucibus at. Aliquam
           lacus nisi, sollicitudin at nisi nec, fermentum congue felis. Quisque
           mauris dolor, fringilla sed tincidunt ac, finibus non odio. Sed vitae
@@ -39,7 +40,7 @@ export default function Article() {
           ullamcorper gravida sem sit amet cursus. Etiam pulvinar purus vitae
           justo pharetra consequat. Mauris id mi ut arcu feugiat maximus. Mauris
           consequat tellus id tempus
-        </p>
+        </Typography.p>
       </article>
     </Container>
   );

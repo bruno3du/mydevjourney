@@ -5,16 +5,12 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { data: session } = useSession();
   const router = useRouter();
-
-  // useEffect(() => {
-  //   if (isOpen) document.body.style.overflow = "hidden";
-  //   else document.body.style.overflow = "visible";
-  // }, [isOpen]);
 
   const onOpen = () => {
     document.body.style.overflow = "hidden";
@@ -28,29 +24,29 @@ export default function Header() {
 
   return (
     <header className="h-28">
-      <div className="container mx-auto flex h-full items-center justify-between gap-12 rounded-md px-5 md:gap-0">
+      <div className="container mx-auto flex h-full items-center justify-between gap-12 rounded-md bg-primary-foreground px-5 md:gap-0">
         <button className="md:hidden" type="button" onClick={onOpen}>
           <ButtonHamburger />
         </button>
         <Link href="/#">
-          <Logo />
+          <Logo size="2xl" />
         </Link>
         <nav>
           <ul className="hidden items-center gap-x-9  md:flex">
             <li>
               <Link
                 href="/#"
-                className="text-md hover:text-orange font-semibold text-white no-underline transition"
+                className="text-md hover:text-orange font-semibold no-underline transition"
               >
                 Home
               </Link>
             </li>
-            <button
-              className="rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20"
+            <Button
+              variant="outline"
               onClick={() => (!session ? void router.push("/login") : null)}
             >
               {session ? "Logged In" : "Sign in"}
-            </button>
+            </Button>
           </ul>
         </nav>
       </div>

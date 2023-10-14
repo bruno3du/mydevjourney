@@ -17,7 +17,7 @@ export default function Layout({ children, title, description }: ILayout) {
         <meta name="description" content={description} />
       </Head>
       <Header />
-      <ThemeProvider>
+      <ThemeProvider attribute="class" defaultTheme="dark">
         <main>{children}</main>
       </ThemeProvider>
       <Footer />
