@@ -1,7 +1,7 @@
+import { ThemeProvider } from '@/components/theme-provider';
+import Footer from "@/components/ui/footer";
+import Header from "@/components/ui/header";
 import Head from "next/head";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import { ThemeProvider } from '@/components/ThemeProvider';
 
 interface ILayout {
   children: React.ReactNode;

@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Container from "@/components/Container";
+import Container from "@/components/ui/container";
 
 interface PostUserProfileProps {
   name: string;

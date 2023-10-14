@@ -59,12 +59,12 @@ const tailwind: Config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -76,4 +76,4 @@ const tailwind: Config = {
   plugins: [require("tailwindcss-animate")],
 };
 
-export default tailwind
+export default tailwind;

@@ -1,4 +1,4 @@
-import PostContainer from "@/container/PostContainer";
+import PostContainer from "@/container/post-container";
 import Layout from "@/layout";
 
 export default function Posts() {

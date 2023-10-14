@@ -1,8 +1,8 @@
-import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumb from "@/components/ui/breadcrumb";
 
+import { TypographyH1 } from '@/components/ui/typography';
 import Article from "./components/Article";
 import PostUserProfile from "./components/PostUserProfile";
-import { TypographyH1 } from '@/components/ui/typography';
 
 const routes = [
   {

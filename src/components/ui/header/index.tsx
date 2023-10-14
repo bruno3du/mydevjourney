@@ -1,10 +1,10 @@
-import ButtonHamburger from "@/assets/Icons/ButtonHamburger";
-import Logo from "../Logo";
-import { useState } from "react";
-import MenuMobile from "../MenuMobile";
+import ButtonHamburger from "@/assets/Icons/btn-hamburger";
+import Logo from "@/components/ui/logo";
+import MenuMobile from "@/components/ui/menu-mobile";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ export default function Header() {
             <li>
               <Link
                 href="/#"
-                className="text-md font-semibold text-white no-underline transition hover:text-orange"
+                className="text-md hover:text-orange font-semibold text-white no-underline transition"
               >
                 Home
               </Link>
