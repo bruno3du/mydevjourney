@@ -1,10 +1,13 @@
-import { type NextPage } from "next";
-import Layout from "@/layout";
 import HomeContainer from "@/container/home-container";
+import Layout from "@/layout";
+import { type NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <Layout title="My dev Journey" description="Sua pagina de noticias tech">
+    <Layout
+      title="Bruno Eduardo - DEV FullStack"
+      description="Desenvolvedor FullStack"
+    >
       <HomeContainer />
     </Layout>
   );

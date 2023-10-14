@@ -1,7 +1,7 @@
+import Link from "next/link";
 import { FiX } from "react-icons/fi";
 import Drawer from "./components/Drawer";
 import Overlay from "./components/Overlay";
-import Link from 'next/link';
 
 interface MenuMobileProps {
   isOpen: boolean;
@@ -13,10 +13,6 @@ const routes = [
   {
     name: "Home",
     href: "/#",
-  },
-  {
-    name: "Login",
-    href: "/login",
   },
 ];
 
@@ -35,7 +31,7 @@ export default function MenuMobile({ isOpen, onClose }: MenuMobileProps) {
                     <Link
                       href={route.href}
                       onClick={onClose}
-                      className="flex h-32 w-full items-center justify-center font-heading text-3xl font-bold"
+                      className="font-heading flex h-32 w-full items-center justify-center text-3xl font-bold"
                     >
                       {route.name}
                     </Link>

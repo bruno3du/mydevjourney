@@ -7,7 +7,7 @@ import { api } from "@/utils/api";
 
 import "../styles/globals.css";
 
-const karma = Inter({
+const inter = Inter({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--inter-font",
@@ -19,7 +19,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <div className={`${karma.variable}`}>
+      <div className={inter.variable}>
         <Component {...pageProps} />
       </div>
     </SessionProvider>

@@ -9,10 +9,10 @@ interface BreadcrumbProps {
 export default function Breadcrumb({ pageList }: BreadcrumbProps) {
   return (
     <nav
-      className="justify-between rounded-lg border border-gray-750  px-4 py-2 sm:flex sm:px-5"
+      className="justify-between rounded-lg border border-secondary  px-4 py-2 sm:flex sm:px-5"
       aria-label="Breadcrumb"
     >
-      <ol className="mb-3 inline-flex items-center space-x-1 sm:mb-0 md:space-x-3">
+      <ol className="inline-flex items-center space-x-1 sm:mb-0 md:space-x-3">
         {pageList?.map((page, index) => {
           const first = index === 0;
           const last = index === pageList.length - 1;
@@ -23,7 +23,7 @@ export default function Breadcrumb({ pageList }: BreadcrumbProps) {
                 <div className="flex items-center">
                   <Link
                     href={page.href}
-                    className="ml-1 text-sm font-medium md:ml-2"
+                    className="ml-1 text-sm text-secondary font-medium md:ml-2"
                   >
                     {page.name}
                   </Link>
@@ -38,7 +38,7 @@ export default function Breadcrumb({ pageList }: BreadcrumbProps) {
                 <div className="flex items-center">
                   <svg
                     aria-hidden="true"
-                    className="h-6 w-6 text-gray-400"
+                    className="h-6 w-6 text-muted"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export default function Breadcrumb({ pageList }: BreadcrumbProps) {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="mx-1 text-sm font-medium text-gray-500 dark:text-gray-400 md:mx-2">
+                  <span className="mx-1 text-sm font-medium text-primary md:mx-2">
                     {page.name}
                   </span>
                 </div>

@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
 }
@@ -8,10 +10,7 @@ export default function Container({
   ...props
 }: ContainerProps) {
   return (
-    <div
-      className={`min-h-[106px] rounded-md ${className ?? ""}`}
-      {...props}
-    >
+    <div className={cn("min-h-[106px] rounded-md", className)} {...props}>
       {children}
     </div>
   );

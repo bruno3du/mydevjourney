@@ -5,7 +5,6 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { Button } from "../ui/button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +23,7 @@ export default function Header() {
 
   return (
     <header className="h-28">
-      <div className="container mx-auto flex h-full items-center justify-between gap-12 rounded-md bg-primary-foreground px-5 md:gap-0">
+      <div className="container mx-auto flex h-full items-center justify-between gap-12 rounded-md bg-primary-foreground px-8 md:gap-0">
         <button className="md:hidden" type="button" onClick={onOpen}>
           <ButtonHamburger />
         </button>
@@ -41,12 +40,6 @@ export default function Header() {
                 Home
               </Link>
             </li>
-            <Button
-              variant="outline"
-              onClick={() => (!session ? void router.push("/login") : null)}
-            >
-              {session ? "Logged In" : "Sign in"}
-            </Button>
           </ul>
         </nav>
       </div>

@@ -28,6 +28,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs"
-  ],
+, "src/container/create-post-container/components"  ],
   "exclude": ["node_modules"]
 }

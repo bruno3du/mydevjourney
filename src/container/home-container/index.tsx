@@ -1,3 +1,4 @@
+import { Card } from "@/components/ui/card";
 import { Typography } from "@/components/ui/typography";
 import CardListLatestPosts from "./components/card-list-latest-posts";
 
@@ -10,6 +11,7 @@ export default function HomeContainer() {
         <CardListLatestPosts />
         <CardListLatestPosts />
         <CardListLatestPosts />
+        <Card></Card>
       </section>
     </div>
   );
