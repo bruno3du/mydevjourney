@@ -16,11 +16,13 @@ export default function Layout({ children, title, description }: ILayout) {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
-      <Header />
       <ThemeProvider attribute="class" defaultTheme="dark">
-        <main>{children}</main>
+        <main className="min-h-screen">
+          <Header />
+          {children}
+          <Footer />
+        </main>
       </ThemeProvider>
-      <Footer />
     </>
   );
 }

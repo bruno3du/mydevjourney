@@ -15,7 +15,7 @@ const CreatePostContainer: FunctionComponent = () => {
   return (
     <div className="mt-14 hidden h-full flex-col md:flex">
       <div className="container flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16">
-        <Typography.h2 className="w-fit whitespace-nowrap text-lg font-semibold ">
+        <Typography.h2 className="whi w-fit text-lg font-semibold ">
           Create Post
         </Typography.h2>
         <div className="ml-auto flex w-full space-x-2 sm:justify-end">

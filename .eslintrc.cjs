@@ -20,11 +20,13 @@ const config = {
   },
   plugins: ["@typescript-eslint"],
   extends: [
-    "next/core-web-vitals", "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"],
+    "plugin:prettier/recommended",
+  ],
   rules: {
     "@typescript-eslint/consistent-type-imports": [
       "warn",
@@ -34,6 +36,7 @@ const config = {
       },
     ],
     "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+    "import/no-webpack-loader-syntax": "off",
   },
 };
 
