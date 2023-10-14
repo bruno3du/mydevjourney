@@ -39,7 +39,7 @@ export default function PostUserProfile({
           <div className="flex space-x-2 text-ellipsis">
             <Linkedin />
             <a
-              href={github}
+              href={linkedin}
               target="_blank"
               className="max-w-[340px] overflow-hidden text-ellipsis whitespace-nowrap text-muted-foreground underline underline-offset-2"
             >
