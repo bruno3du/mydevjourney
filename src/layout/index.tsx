@@ -1,6 +1,6 @@
-import { ThemeProvider } from '@/components/theme-provider';
-import Footer from "@/components/ui/footer";
-import Header from "@/components/ui/header";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import { ThemeProvider } from "@/components/theme-provider";
 import Head from "next/head";
 
 interface ILayout {
