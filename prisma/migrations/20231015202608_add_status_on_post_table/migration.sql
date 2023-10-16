@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "post" ADD COLUMN     "status" TEXT NOT NULL DEFAULT 'draft',
+ALTER COLUMN "createdAt" SET DEFAULT CURRENT_TIMESTAMP;

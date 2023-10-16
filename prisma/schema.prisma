@@ -7,12 +7,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Example {
-  id        String   @id @default(cuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
 model Account {
   id                String  @id @default(cuid())
   userId            String
@@ -50,6 +44,7 @@ model User {
   image         String?
   accounts      Account[]
   sessions      Session[]
+  Post          Post[]
 
   @@map("user")
 }
@@ -61,4 +56,18 @@ model VerificationToken {
 
   @@unique([identifier, token])
   @@map("verification-token")
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  content   String
+  slug      String   @unique
+  userId    String
+  createdAt DateTime @default(now())
+  status    String   @default("draft")
+  updatedAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("post")
 }

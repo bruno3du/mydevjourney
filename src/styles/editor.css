@@ -1,0 +1,67 @@
+.cdx-marker {
+    background-color: hsl(var(--muted)) !important;
+    color: hsl(var(--primary));
+}
+
+.codex-editor {
+    color: hsl(var(--primary));
+}
+
+.ce-header {
+
+    color: hsl(var(--primary));
+}
+
+.cdx-notifies {
+    color: hsl(var(--secondary));
+}
+
+.cdx-block {
+    color: hsl(var(--primary));
+}
+
+.ce-conversion-tool {
+    color: hsl(var(--secondary));
+}
+
+.ce-conversion-tool--hidden {
+    color: hsl(var(--secondary));
+}
+
+.cdx-block::selection,
+.cdx-marker::selection,
+.ce-header::selection,
+.codex-editor a::selection,
+.cdx-list__item::selection,
+.codex-editor::selection,
+.ce-block--selected::selection,
+.ce-block--selected,
+.ce-block.ce-block--selected>.ce-block__content,
+.ce-block__content::selection {
+    background-color: hsl(var(--muted-foreground));
+    color: hsl(var(--secondary));
+}
+
+.ce-toolbar {
+    right: auto;
+}
+
+.ce-block__content {
+    max-width: 100%;
+}
+
+.ce-inline-tool {
+    color: hsl(var(--secondary));
+}
+
+.ce-inline-tool--bold {
+    color: hsl(var(--secondary));
+}
+
+.ce-inline-toolbar__dropdown-arrow {
+    color: hsl(var(--secondary));
+}
+
+.ce-inline-toolbar__dropdown-content {
+    color: hsl(var(--secondary));
+}

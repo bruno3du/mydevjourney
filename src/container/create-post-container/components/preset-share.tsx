@@ -36,7 +36,7 @@ export function PresetShare() {
             />
           </div>
           <Button type="submit" size="sm" className="px-3">
-            <span className="sr-only">Copy</span>
+            <span className="sr-only" >Copy</span>
             <CopyIcon className="h-4 w-4" />
           </Button>
         </div>
